@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="3222.xml" projectName="C:\Users\nalbert\Desktop\3222.xlsx" typeText="Tipo" messageText="Mensaje" timeText="Tiempo">
+  <LogEntry type="Error" dateTime="3:56:05">
+    <Message>No es posible importar el archivo XLSX de la versión 1.3.</Message>
+  </LogEntry>
+</LogFile>
