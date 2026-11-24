@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usuarios · SCADA Destilería</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <script defer src="../uibuilder/uibuilder.iife.min.js"></script>
+  <script defer src="./auth.js"></script>
+  <script defer src="./alarmas.js"></script>
+  <script defer src="./common.js"></script>
+  <script defer src="./usuarios.js"></script>
+</head>
+<body>
+<header>
+  <h1><img class="logo-h" src="./img/botella.png" alt="">Destilería · SCADA</h1>
+  <nav class="vistas"><a href="./">Planta</a><a href="./estadisticas.html">Estadísticas</a><a href="./fases.html">Fases y alarmas</a><a href="./usuarios.html" class="act">Usuarios</a></nav>
+  <div class="badges"><span id="b-modo" class="badge off">Modo</span><span id="b-plc" class="badge off">PLC</span></div>
+</header>
+<main class="vista">
+  <div class="card">
+    <h2>Cambiar mi contraseña</h2>
+    <div class="form">
+      <label>Contraseña actual<input id="p-actual" type="password" autocomplete="current-password"></label>
+      <label>Contraseña nueva<input id="p-nueva" type="password" autocomplete="new-password"></label>
+      <label>Repetir contraseña nueva<input id="p-repetir" type="password" autocomplete="new-password"></label>
+      <button id="btn-pass" class="mini">Cambiar contraseña</button>
+      <div id="msg-pass" class="msg"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Crear usuario</h2>
+    <div class="form">
+      <label>Usuario<input id="u-nombre" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"></label>
+      <label>Contraseña<input id="u-clave" type="password" autocomplete="new-password"></label>
+      <label>Repetir contraseña<input id="u-repetir" type="password" autocomplete="new-password"></label>
+      <button id="btn-add" class="mini">Crear usuario</button>
+      <div id="msg-add" class="msg"></div>
+    </div>
+  </div>
+  <div class="card ancho"><h2>Usuarios registrados</h2><div id="lista-usuarios"></div>
+    <p class="nota">Los usuarios se guardan en <code>usuarios.csv</code> (junto a <code>flow.json</code>) con la contraseña cifrada. Usuario: 3 a 20 caracteres (letras, números, <code>. _ -</code>). Contraseña: mínimo 4 caracteres.</p></div>
+</main>
+</body>
+</html>

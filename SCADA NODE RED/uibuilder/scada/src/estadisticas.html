@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estadísticas · SCADA Destilería</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <script defer src="../uibuilder/uibuilder.iife.min.js"></script>
+  <script defer src="./auth.js"></script>
+  <script defer src="./alarmas.js"></script>
+  <script defer src="./common.js"></script>
+  <script defer src="./estadisticas.js"></script>
+</head>
+<body>
+<header>
+  <h1><img class="logo-h" src="./img/botella.png" alt="">Destilería · SCADA</h1>
+  <nav class="vistas"><a href="./">Planta</a><a href="./estadisticas.html" class="act">Estadísticas</a><a href="./fases.html">Fases y alarmas</a><a href="./usuarios.html">Usuarios</a></nav>
+  <div class="badges"><span id="b-modo" class="badge off">Modo</span><span id="b-plc" class="badge off">PLC</span></div>
+</header>
+<main class="vista">
+  <div class="barra">
+    <label>Rango
+      <select id="rango"><option value="1">Última hora</option><option value="6">Últimas 6 h</option><option value="12" selected>Últimas 12 h</option></select>
+    </label>
+    <a class="mini" href="#" data-csv="../scada-api/csv/historial" download>Descargar historial (CSV)</a>
+    <button id="btn-borrar" class="mini">Borrar historial</button>
+  </div>
+  <div class="cards4">
+    <div class="card"><h2>Ciclos completados</h2><b class="gran" id="s-ciclos">0</b></div>
+    <div class="card"><h2>Litros extraídos</h2><b class="gran" id="s-litros">0</b><small> L</small></div>
+    <div class="card"><h2>Máx. temp. destilador</h2><b class="gran" id="s-maxd">--</b><small> °C</small></div>
+    <div class="card"><h2>Máx. temp. fermentador</h2><b class="gran" id="s-maxf">--</b><small> °C</small></div>
+  </div>
+  <div class="card"><h2>Temperaturas (°C)</h2><canvas id="g-temp"></canvas>
+    <div class="leyenda"><span style="--c:#58a6ff">Fermentador</span><span style="--c:#f0883e">Destilador</span></div></div>
+  <div class="card"><h2>Volúmenes (L)</h2><canvas id="g-vol"></canvas>
+    <div class="leyenda"><span style="--c:#58a6ff">Fermentador</span><span style="--c:#f0883e">Destilador</span><span style="--c:#3fb950">Trasiega</span><span style="--c:#d2a8ff">Recirculado</span></div></div>
+  <p class="nota">El servidor guarda una muestra cada 5 s (últimas 12 h) en <code>historial_scada.json</code>, así que el historial sobrevive a reinicios y es el mismo desde cualquier navegador. Ciclos y litros solo cuentan en modo Default/Manual; en modo Pruebas no se registra nada.</p>
+</main>
+</body>
+</html>

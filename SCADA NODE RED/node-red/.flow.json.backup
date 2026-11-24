@@ -1,0 +1,805 @@
+[
+    {
+        "id": "tab_destileria",
+        "type": "tab",
+        "label": "Destilería",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cfg_s7",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "500",
+        "timeout": "3000",
+        "name": "PLC_1 S7-1200",
+        "vartable": [
+            {
+                "addr": "MR40",
+                "name": "fer_temp"
+            },
+            {
+                "addr": "MR134",
+                "name": "des_temp"
+            },
+            {
+                "addr": "MR54",
+                "name": "fer_vol"
+            },
+            {
+                "addr": "MR14",
+                "name": "des_vol"
+            },
+            {
+                "addr": "MR82",
+                "name": "rec_vol"
+            },
+            {
+                "addr": "MR92",
+                "name": "recir_vol"
+            },
+            {
+                "addr": "M130.0",
+                "name": "fer_llenando"
+            },
+            {
+                "addr": "M72.7",
+                "name": "fer_completa"
+            },
+            {
+                "addr": "M131.1",
+                "name": "cond_clarificar"
+            },
+            {
+                "addr": "M132.3",
+                "name": "alerta_agua_baja"
+            },
+            {
+                "addr": "M500.0",
+                "name": "modo_manual"
+            },
+            {
+                "addr": "M36.0",
+                "name": "act_bombawash"
+            },
+            {
+                "addr": "M36.1",
+                "name": "act_aguadest"
+            },
+            {
+                "addr": "M36.2",
+                "name": "act_purgadest"
+            },
+            {
+                "addr": "M36.3",
+                "name": "act_valvrecirc"
+            },
+            {
+                "addr": "M36.4",
+                "name": "act_resistencia"
+            },
+            {
+                "addr": "M72.1",
+                "name": "act_valvmosto"
+            },
+            {
+                "addr": "M72.2",
+                "name": "act_purgaferm"
+            },
+            {
+                "addr": "M72.5",
+                "name": "act_refrig"
+            },
+            {
+                "addr": "M88.0",
+                "name": "act_vaciado"
+            },
+            {
+                "addr": "M90.0",
+                "name": "act_bombarecirc"
+            },
+            {
+                "addr": "DB6,X0.0",
+                "name": "alm_falla_uss"
+            },
+            {
+                "addr": "DB6,X0.1",
+                "name": "alm_sobrecalentado"
+            },
+            {
+                "addr": "DB6,X0.2",
+                "name": "alm_aviso_metanol"
+            },
+            {
+                "addr": "DB6,X0.3",
+                "name": "alm_ferm_lleno"
+            },
+            {
+                "addr": "DB6,X0.4",
+                "name": "alm_demasiado_wash"
+            },
+            {
+                "addr": "DB6,X0.5",
+                "name": "fase_descarte_metanol"
+            },
+            {
+                "addr": "DB6,X0.6",
+                "name": "fase_ferm_terminada"
+            },
+            {
+                "addr": "DB6,X0.7",
+                "name": "fase_limpieza_ini"
+            },
+            {
+                "addr": "DB6,X1.0",
+                "name": "fase_limpieza_fin"
+            },
+            {
+                "addr": "DB6,X1.1",
+                "name": "fase_inicio_destilado"
+            },
+            {
+                "addr": "DB6,X1.2",
+                "name": "fase_inicio_clarificado"
+            },
+            {
+                "addr": "DB6,X1.3",
+                "name": "fase_descarte_exitoso"
+            },
+            {
+                "addr": "DB6,X1.4",
+                "name": "fase_whisky_terminado"
+            },
+            {
+                "addr": "DB6,X1.5",
+                "name": "fase_inicio_recirculado"
+            },
+            {
+                "addr": "DB6,X1.6",
+                "name": "fase_fin_recirculado"
+            },
+            {
+                "addr": "DB6,X1.7",
+                "name": "fase_mezcla"
+            },
+            {
+                "addr": "DB4,S0.254",
+                "name": "rec_nombre"
+            },
+            {
+                "addr": "DB4,REAL258",
+                "name": "rec_sp_fer"
+            },
+            {
+                "addr": "DB4,REAL262",
+                "name": "rec_hist_fer"
+            },
+            {
+                "addr": "DB4,REAL266",
+                "name": "rec_sp_des"
+            },
+            {
+                "addr": "DB4,REAL270",
+                "name": "rec_hist_des"
+            },
+            {
+                "addr": "DB2,X0.0",
+                "name": "man_wash"
+            },
+            {
+                "addr": "DB2,X0.1",
+                "name": "man_aguadest"
+            },
+            {
+                "addr": "DB2,X0.2",
+                "name": "man_purgadest"
+            },
+            {
+                "addr": "DB2,X0.3",
+                "name": "man_valvrecirc"
+            },
+            {
+                "addr": "DB2,X0.4",
+                "name": "man_mosto"
+            },
+            {
+                "addr": "DB2,X0.5",
+                "name": "man_purgaferm"
+            },
+            {
+                "addr": "DB2,X0.6",
+                "name": "man_refrig"
+            },
+            {
+                "addr": "DB2,X0.7",
+                "name": "man_vaciado"
+            },
+            {
+                "addr": "DB2,X1.0",
+                "name": "man_bombarecirc"
+            },
+            {
+                "addr": "M231.0",
+                "name": "btn_iniciar"
+            },
+            {
+                "addr": "M231.1",
+                "name": "btn_extraer"
+            }
+        ]
+    },
+    {
+        "id": "cfg_serial",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM5",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "ws_fer",
+        "type": "websocket-listener",
+        "path": "/ws/fermentador",
+        "wholemsg": "false"
+    },
+    {
+        "id": "ws_tan",
+        "type": "websocket-listener",
+        "path": "/ws/tanques",
+        "wholemsg": "false"
+    },
+    {
+        "id": "331f45f52593f2f3",
+        "type": "auto_layout_config",
+        "name": "AutoLayout",
+        "algorithm": "dagre_lr",
+        "settings": "{\"dagre_lr\":{\"rankdir\":\"LR\",\"marginx\":20,\"marginy\":20,\"nodesep\":30,\"ranksep\":50},\"dagre_longest_path\":{\"rankdir\":\"LR\",\"marginx\":2,\"marginy\":2,\"ranker\":\"longest-path\",\"nodesep\":2,\"ranksep\":2},\"elkjs_mr_tree\":{\"algorithm\":\"mrtree\",\"childAreaHeight\":4500,\"childAreaWidth\":4500,\"org.eclipse.elk.direction\":\"RIGHT\"},\"elkjs_layered_upwards\":{\"algorithm\":\"org.eclipse.elk.layered\",\"elk.direction\":\"UP\",\"cycleBreaking.strategy\":\"INTERACTIVE\",\"layering.strategy\":\"INTERACTIVE\",\"crossingMinimization.semiInteractive\":true,\"separateConnectedComponents\":true,\"nodePlacement.strategy\":\"NETWORK_SIMPLEX\",\"spacing.nodeNode\":70,\"spacing.nodeNodeBetweenLayers\":25,\"spacing.edgeNode\":25,\"spacing.edgeNodeBetweenLayers\":20,\"spacing.edgeEdge\":20,\"spacing.edgeEdgeBetweenLayers\":15,\"elk.hierarchyHandling\":\"INCLUDE_CHILDREN\",\"elk.layered.spacing.edgeNodeBetweenLayers\":40,\"elk.layered.nodePlacement.bk.fixedAlignment\":\"BALANCED\",\"layering.layerConstraint\":\"FIRST\"},\"elkjs_layered_downwards\":{\"algorithm\":\"org.eclipse.elk.layered\",\"elk.direction\":\"DOWN\",\"cycleBreaking.strategy\":\"INTERACTIVE\",\"layering.strategy\":\"INTERACTIVE\",\"crossingMinimization.semiInteractive\":true,\"separateConnectedComponents\":true,\"nodePlacement.strategy\":\"NETWORK_SIMPLEX\",\"spacing.nodeNode\":70,\"spacing.nodeNodeBetweenLayers\":25,\"spacing.edgeNode\":25,\"spacing.edgeNodeBetweenLayers\":20,\"spacing.edgeEdge\":20,\"spacing.edgeEdgeBetweenLayers\":15},\"elkjs_box\":{\"algorithm\":\"org.eclipse.elk.box\",\"childAreaHeight\":3000,\"childAreaWidth\":3000},\"pull_request_2267\":{}}"
+    },
+    {
+        "id": "c1",
+        "type": "comment",
+        "z": "tab_destileria",
+        "name": "1) Cambiá COM3 y la IP del PLC · 2) Direcciones: ver s7 endpoint / tabla_de_direcciones.md · 3) Los ESP32/ESP8266 entran por /ws/fermentador y /ws/tanques",
+        "info": "",
+        "x": 420,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "n_ser",
+        "type": "serial in",
+        "z": "tab_destileria",
+        "name": "Arduino destilador",
+        "serial": "cfg_serial",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "n_f_ard"
+            ]
+        ]
+    },
+    {
+        "id": "n_wsf",
+        "type": "websocket in",
+        "z": "tab_destileria",
+        "name": "ESP32 fermentador",
+        "server": "ws_fer",
+        "client": "",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "n_f_esp32"
+            ]
+        ]
+    },
+    {
+        "id": "n_wst",
+        "type": "websocket in",
+        "z": "tab_destileria",
+        "name": "ESP8266 tanques",
+        "server": "ws_tan",
+        "client": "",
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "n_f_esp8266"
+            ]
+        ]
+    },
+    {
+        "id": "n_f_ard",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Micro arduino → PLC",
+        "func": "const SRC='arduino';\nlet d=msg.payload;\nif(typeof d==='string'){const s=d.trim(); if(!s.startsWith('{')) return null; try{d=JSON.parse(s)}catch(e){return null}}\nif(typeof d!=='object'||d===null) return null;\nconst modo=flow.get('modo')||'default';\nflow.set('m_'+SRC,d);\nif(modo==='simulacion'||modo==='pruebas') return [null,null];   // micros \"desconectados\"\nconst w=[]; const add=(v,x)=>{ if(x!==null&&x!==undefined&&isFinite(x)) w.push({variable:v,payload:Number(x)}) };\nconst ser=[];\nif(SRC==='arduino'){ if(d.temperatura_actual===undefined) return null; if(d.sensor_ok!==false) add('des_temp',d.temperatura_actual); add('des_vol',d.peso_litros);\n  // Purgas: si el Arduino informa un estado distinto al del PLC (p.ej. reinicio del micro), se le reenvia el del PLC\n  const plc=flow.get('plc')||{};\n  if(d.purga_destilador!==undefined && plc.act_purgadest!==undefined && !!d.purga_destilador!==!!plc.act_purgadest) ser.push({payload:'purgadest:'+(plc.act_purgadest?1:0)});\n  if(d.purga_fermentador!==undefined && plc.act_purgaferm!==undefined && !!d.purga_fermentador!==!!plc.act_purgaferm) ser.push({payload:'purgaferm:'+(plc.act_purgaferm?1:0)});\n  if(d.valvula_vaciado!==undefined && plc.act_vaciado!==undefined && !!d.valvula_vaciado!==!!plc.act_vaciado) ser.push({payload:'vaciado:'+(plc.act_vaciado?1:0)});\n  if(d.bomba_agua!==undefined && plc.act_aguadest!==undefined && !!d.bomba_agua!==!!plc.act_aguadest) ser.push({payload:'agua:'+(plc.act_aguadest?1:0)});\n}\nif(SRC==='esp32'){ if(d.sensor_ok!==false) add('fer_temp',d.temperatura_actual); }\nif(SRC==='esp8266'){ add('fer_vol',d.fermentador_litros); if(d.recepcion_ok!==false) add('rec_vol',d.recepcion_litros); if(d.recirculado_ok!==false) add('recir_vol',d.recirculado_litros); }\nreturn [w.length?w:null,{topic:'micro',payload:{src:SRC}},ser.length?ser:null];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "n_s7out"
+            ],
+            [
+                "n_ui"
+            ],
+            [
+                "n_serout"
+            ]
+        ]
+    },
+    {
+        "id": "n_f_esp32",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Micro esp32 → PLC",
+        "func": "const SRC='esp32';\nlet d=msg.payload;\nif(typeof d==='string'){const s=d.trim(); if(!s.startsWith('{')) return null; try{d=JSON.parse(s)}catch(e){return null}}\nif(typeof d!=='object'||d===null) return null;\nconst modo=flow.get('modo')||'default';\nflow.set('m_'+SRC,d);\nif(modo==='simulacion'||modo==='pruebas') return [null,null];   // micros \"desconectados\"\nconst w=[]; const add=(v,x)=>{ if(x!==null&&x!==undefined&&isFinite(x)) w.push({variable:v,payload:Number(x)}) };\nif(SRC==='arduino'){ if(d.temperatura_actual===undefined) return null; if(d.sensor_ok!==false) add('des_temp',d.temperatura_actual); add('des_vol',d.peso_litros); }\nif(SRC==='esp32'){ if(d.sensor_ok!==false) add('fer_temp',d.temperatura_actual); }\nif(SRC==='esp8266'){ add('fer_vol',d.fermentador_litros); if(d.recepcion_ok!==false) add('rec_vol',d.recepcion_litros); if(d.recirculado_ok!==false) add('recir_vol',d.recirculado_litros); }\nreturn [w.length?w:null,{topic:'micro',payload:{src:SRC}}];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 180,
+        "wires": [
+            [
+                "n_s7out"
+            ],
+            [
+                "n_ui"
+            ]
+        ]
+    },
+    {
+        "id": "n_f_esp8266",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Micro esp8266 → PLC",
+        "func": "const SRC='esp8266';\nlet d=msg.payload;\nif(typeof d==='string'){const s=d.trim(); if(!s.startsWith('{')) return null; try{d=JSON.parse(s)}catch(e){return null}}\nif(typeof d!=='object'||d===null) return null;\nconst modo=flow.get('modo')||'default';\nflow.set('m_'+SRC,d);\nif(modo==='simulacion'||modo==='pruebas') return [null,null];   // micros \"desconectados\"\nconst w=[]; const add=(v,x)=>{ if(x!==null&&x!==undefined&&isFinite(x)) w.push({variable:v,payload:Number(x)}) };\nif(SRC==='arduino'){ if(d.temperatura_actual===undefined) return null; if(d.sensor_ok!==false) add('des_temp',d.temperatura_actual); add('des_vol',d.peso_litros); }\nif(SRC==='esp32'){ if(d.sensor_ok!==false) add('fer_temp',d.temperatura_actual); }\nif(SRC==='esp8266'){ add('fer_vol',d.fermentador_litros); if(d.recepcion_ok!==false) add('rec_vol',d.recepcion_litros); if(d.recirculado_ok!==false) add('recir_vol',d.recirculado_litros); }\nreturn [w.length?w:null,{topic:'micro',payload:{src:SRC}}];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "n_s7out"
+            ],
+            [
+                "n_ui"
+            ]
+        ]
+    },
+    {
+        "id": "n_s7out",
+        "type": "s7 out",
+        "z": "tab_destileria",
+        "endpoint": "cfg_s7",
+        "variable": "",
+        "name": "Escribir PLC",
+        "x": 640,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "n_s7in",
+        "type": "s7 in",
+        "z": "tab_destileria",
+        "endpoint": "cfg_s7",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "Leer PLC",
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "n_plc"
+            ]
+        ]
+    },
+    {
+        "id": "n_plc",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "PLC → SCADA / micros",
+        "func": "// PLC -> SCADA (+ micros)\nconst modo=flow.get('modo')||'default';\nconst p=msg.payload; if(typeof p!=='object'||p===null) return null;\nconst plc=Object.assign({},flow.get('plc')||{},p); flow.set('plc',plc);\nconst real=(modo==='default'||modo==='manual');\nconst ui=real?{topic:'plc',payload:plc}:null;\nconst ser=[],wf=[];\nif(real){\n  if('rec_sp_des' in p) ser.push({payload:'setpoint:'+Number(p.rec_sp_des)});\n  if('rec_hist_des' in p) ser.push({payload:'hist:'+Number(p.rec_hist_des)});\n  if('act_purgadest' in p) ser.push({payload:'purgadest:'+(p.act_purgadest?1:0)});\n  if('act_purgaferm' in p) ser.push({payload:'purgaferm:'+(p.act_purgaferm?1:0)});\n  if('act_aguadest' in p) ser.push({payload:'agua:'+(p.act_aguadest?1:0)});\n  if('act_vaciado' in p) ser.push({payload:'vaciado:'+(p.act_vaciado?1:0)});\n  const f={};\n  if('rec_sp_fer' in p) f.setpoint=Number(p.rec_sp_fer);\n  if('rec_hist_fer' in p) f.histeresis=Number(p.rec_hist_fer);\n  if('act_valvmosto' in p) f.bomba_mosto=!!p.act_valvmosto;\n  if('act_bombawash' in p) f.valvula_destilador=!!p.act_bombawash;\n  if('act_refrig' in p){ f.auto_refrigeracion=false; f.refrigeracion=!!p.act_refrig; }\n  // Bomba de recirculado (M90.0) y válvula de recirculado (M36.3) = mismo actuador del ESP32\n  if('act_bombarecirc' in p || 'act_valvrecirc' in p) f.recirculado=!!(plc.act_bombarecirc||plc.act_valvrecirc);\n  if(Object.keys(f).length) wf.push({payload:JSON.stringify(f)});\n}\nreturn [ui,ser.length?ser:null,wf.length?wf:null];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "n_ui"
+            ],
+            [
+                "n_serout"
+            ],
+            [
+                "n_wsfout"
+            ]
+        ]
+    },
+    {
+        "id": "n_serout",
+        "type": "serial out",
+        "z": "tab_destileria",
+        "name": "Comandos Arduino",
+        "serial": "cfg_serial",
+        "x": 640,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "n_wsfout",
+        "type": "websocket out",
+        "z": "tab_destileria",
+        "name": "→ ESP32",
+        "server": "ws_fer",
+        "client": "",
+        "x": 640,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "n_wstout",
+        "type": "websocket out",
+        "z": "tab_destileria",
+        "name": "→ ESP8266 (sin usar: solo tara/cal a mano)",
+        "server": "ws_tan",
+        "client": "",
+        "x": 640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "n_cmd",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Comandos SCADA",
+        "func": "// SCADA -> PLC / micros / SCADA        salidas: [s7 out, serial Arduino, ws ESP32, SCADA]\nconst MANS=['man_wash','man_aguadest','man_purgadest','man_valvrecirc','man_mosto','man_purgaferm','man_refrig','man_vaciado','man_bombarecirc'];\nconst SPS={rec_sp_fer:[0,100],rec_hist_fer:[0,20],rec_sp_des:[0,120],rec_hist_des:[0,20]};\nconst MEDS=['fer_temp','des_temp','fer_vol','des_vol','rec_vol','recir_vol'];\nconst modo=flow.get('modo')||'default';\nconst real=m=>m==='default'||m==='manual';\nswitch(msg.topic){\n case 'hello':{\n   const out=[{topic:'status',payload:{modo}}];\n   if(modo==='pruebas'){ const ps=flow.get('prueba'); if(ps) out.push({topic:'plc',payload:ps}); }\n   else if(real(modo)){ const plc=flow.get('plc'); if(plc) out.push({topic:'plc',payload:plc}); }\n   return [null,null,null,out];\n }\n case 'modo':{\n   const m=String(msg.payload);\n   if(!['default','manual','simulacion','pruebas'].includes(m)) return null;\n   flow.set('modo',m);\n   const out=[{topic:'status',payload:{modo:m}}];\n   if(m==='simulacion') flow.set('sim',null);\n   if(m==='pruebas'){ const ps=Object.assign({},flow.get('plc')||{}); flow.set('prueba',ps); out.push({topic:'plc',payload:ps}); }\n   if(real(m)){ const plc=flow.get('plc'); if(plc) out.push({topic:'plc',payload:plc}); }\n   // ModoManual del PLC: 1 solo en modo Manual\n   return [[{variable:'modo_manual',payload:m==='manual'}],null,null,out];\n }\n case 'manual':{\n   if(modo!=='manual') return null;\n   const p=msg.payload||{}; if(!MANS.includes(p.name)) return null;\n   return [[{variable:p.name,payload:!!p.value}],null,null,null];\n }\n case 'btn':{\n   if(!real(modo)) return null;\n   const v={iniciar:'btn_iniciar',extraer:'btn_extraer'}[msg.payload]; if(!v) return null;\n   node.send([[{variable:v,payload:true}],null,null,null]);\n   setTimeout(()=>node.send([[{variable:v,payload:false}],null,null,null]),500);\n   return null;\n }\n case 'set_sp':{                       // solo en automático (Default)\n   if(modo!=='default') return null;\n   const p=msg.payload||{}, r=SPS[p.name], v=Number(p.value);\n   if(!r||!isFinite(v)||v<r[0]||v>r[1]) return null;\n   const wr=[{variable:p.name,payload:v}];\n   const ser={rec_sp_des:'setpoint:'+v,rec_hist_des:'hist:'+v}[p.name];\n   const ws={rec_sp_fer:{setpoint:v},rec_hist_fer:{histeresis:v}}[p.name];\n   return [wr,ser?{payload:ser}:null,ws?{payload:JSON.stringify(ws)}:null,null];\n }\n case 'test_set':{                     // solo en Pruebas: se guarda y las medidas/consignas también van al PLC\n   if(modo!=='pruebas') return null;\n   const p=msg.payload||{}; const ps=flow.get('prueba')||{};\n   if(typeof p.name!=='string') return null;\n   ps[p.name]=p.value; flow.set('prueba',ps);\n   if(MEDS.includes(p.name)||p.name in SPS){ const v=Number(p.value); if(isFinite(v)) return [[{variable:p.name,payload:v}],null,null,null]; }\n   return null;\n }\n}\nreturn null;",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 460,
+        "wires": [
+            [
+                "n_s7out"
+            ],
+            [
+                "n_serout"
+            ],
+            [
+                "n_wsfout"
+            ],
+            [
+                "n_ui"
+            ]
+        ]
+    },
+    {
+        "id": "n_tick",
+        "type": "inject",
+        "z": "tab_destileria",
+        "name": "cada 1 s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "n_sim"
+            ]
+        ]
+    },
+    {
+        "id": "n_sim",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Simulador de ciclo",
+        "func": "// Simulador de un ciclo normal (solo con modo = simulacion). No toca PLC ni micros.\nif((flow.get('modo')||'default')!=='simulacion') return null;\nconst plc=flow.get('plc')||{};\nlet s=flow.get('sim');\nif(!s) s={ph:0,t:0,cic:0,cool:0,v:{fer_temp:24,des_temp:22,fer_vol:0,des_vol:0.3,rec_vol:0,recir_vol:0}};\nconst v=s.v; s.t++;\nconst A={act_bombawash:0,act_aguadest:0,act_purgadest:0,act_valvrecirc:0,act_resistencia:0,act_valvmosto:0,act_purgaferm:0,act_refrig:0,act_vaciado:0,act_bombarecirc:0};\nconst F={fer_llenando:0,alm_aviso_metanol:0};\nconst SPF=20,HF=0.5,SPD=88; let fase='En espera';\nconst go=n=>{s.ph=n;s.t=0};\nswitch(s.ph){\n case 0: fase='Ingreso de mosto'; A.act_valvmosto=1;F.fer_llenando=1; v.fer_vol=Math.min(50,v.fer_vol+2.5); v.fer_temp+=(24-v.fer_temp)*0.1; if(v.fer_vol>=50) go(1); break;\n case 1: fase='Fermentación'; if(v.fer_temp>SPF+HF) s.cool=1; else if(v.fer_temp<SPF-HF) s.cool=0; if(s.t<3) s.cool=1;\n   A.act_refrig=s.cool; v.fer_temp+=s.cool?-0.35:0.25; if(s.t>=25) go(2); break;\n case 2: fase='Trasvase de wash al destilador'; A.act_bombawash=1; v.fer_vol=Math.max(0,v.fer_vol-2.5); v.des_vol+=1.9; if(v.fer_vol<=0.2) go(3); break;\n case 3: fase='Limpieza del fermentador'; A.act_purgaferm=1; if(s.t>=4) go(4); break;\n case 4: fase='Clarificado (agregando agua)'; A.act_aguadest=1; v.des_vol+=0.57; if(s.t>=10) go(5); break;\n case 5: fase=s.cic?'Redestilado':'Destilando'; A.act_resistencia=1;\n   v.des_temp=Math.max(20,Math.min(95,v.des_temp+(SPD+Math.sin(s.t/2)*0.6-v.des_temp)*0.06));\n   if(s.cic===0&&s.t<=5){A.act_purgadest=1;F.alm_aviso_metanol=1;fase='Descarte de metanol';}\n   if(s.t>5&&v.des_temp>80){v.des_vol=Math.max(5,v.des_vol-0.9);v.rec_vol+=0.8;}\n   if(v.des_vol<=5||s.t>=90) go(s.cic<1?6:7); break;\n case 6: fase='Recirculando'; A.act_bombarecirc=1;A.act_valvrecirc=1; v.rec_vol=Math.max(0,v.rec_vol-1.5); v.des_vol+=1.5;\n   if(v.rec_vol<=0.2){s.cic++;go(5);} break;\n case 7: fase='Extracción a la barrica'; A.act_vaciado=1; v.des_temp+=(25-v.des_temp)*0.1; v.rec_vol=Math.max(0,v.rec_vol-1.8); if(v.rec_vol<=0) go(8); break;\n case 8: fase='Whisky terminado'; if(s.t>=6){ s={ph:0,t:0,cic:0,cool:0,v:{fer_temp:24,des_temp:22,fer_vol:0,des_vol:0.3,rec_vol:0,recir_vol:0}}; } break;\n}\nif(s.ph===6) v.recir_vol=Math.min(8,v.recir_vol+1); else v.recir_vol=Math.max(0,v.recir_vol-1);\nflow.set('sim',s);\nconst r=x=>Math.round(x*100)/100, o={};\nfor(const k in v) o[k]=r(v[k]);\nconst P=s.ph,C=s.cic,FL={fase_ferm_terminada:P>=2&&P<8?1:0,fase_limpieza_ini:P>=3&&P<8?1:0,fase_limpieza_fin:P>=4&&P<8?1:0,fase_inicio_destilado:P>=4&&P<8?1:0,fase_inicio_clarificado:P>=4&&P<8?1:0,fase_descarte_metanol:P>=5&&P<8?1:0,fase_descarte_exitoso:P>=6&&P<8?1:0,fase_inicio_recirculado:(P>=6||C>0)&&P<8?1:0,fase_fin_recirculado:(C>0||P>=7)&&P<8?1:0,fase_whisky_terminado:P>=8?1:0};\nconst out=Object.assign(o,A,F,FL,{rec_nombre:plc.rec_nombre||'Irlandes',rec_sp_fer:SPF,rec_hist_fer:HF,rec_sp_des:SPD,rec_hist_des:1,modo_manual:false,fase_txt:fase});\nflow.set('simplc',out);\nreturn {topic:'plc',payload:out};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 480,
+        "wires": [
+            [
+                "n_ui"
+            ]
+        ]
+    },
+    {
+        "id": "h_c",
+        "type": "comment",
+        "z": "tab_destileria",
+        "name": "HISTORIAL (servidor): muestra cada 5 s → historial_scada.json · CSV en /scada-api/csv/historial",
+        "info": "",
+        "x": 330,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "h_tick",
+        "type": "inject",
+        "z": "tab_destileria",
+        "name": "cada 5 s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 600,
+        "wires": [
+            [
+                "h_muestra"
+            ]
+        ]
+    },
+    {
+        "id": "h_muestra",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Historial: muestrear",
+        "func": "// Historial (servidor): cada 5 s toma una muestra del estado actual, detecta fases/alarmas y guarda todo en historial_scada.json\n// En modo Pruebas no se registra nada (son datos inventados). Ciclos y litros solo cuentan en Default/Manual.\nconst MAXH=8640, MAXE=300;                       // 12 h de muestras (1 cada 5 s) y 300 eventos\nconst ALMS={alm_sobrecalentado:'Fermentador sobrecalentado',alm_ferm_lleno:'Fermentador lleno',alm_demasiado_wash:'Demasiado wash en el destilador',alm_aviso_metanol:'Aviso de descarte de metanol',alerta_agua_baja:'Agua baja en el destilador',alm_falla_uss:'Falla USS'};\nconst FASES={fase_ferm_terminada:'Fermentación terminada',fase_limpieza_ini:'Limpieza del fermentador',fase_inicio_destilado:'Pesaje previo al clarificado',fase_inicio_clarificado:'Clarificado (agregado de agua)',fase_descarte_metanol:'Descarte de metanol',fase_descarte_exitoso:'Descarte exitoso',fase_inicio_recirculado:'Recirculado',fase_fin_recirculado:'Fin de recirculado',fase_whisky_terminado:'Whisky terminado'};\nconst modo=flow.get('modo')||'default';\nconst real=modo==='default'||modo==='manual';\nconst S=real?flow.get('plc'):(modo==='simulacion'?flow.get('simplc'):null);\nif(!S||(S.fer_temp==null&&S.des_temp==null)){ flow.set('Hprev',null); return null; }\nconst H=flow.get('H')||{hist:[],ev:[],ciclos:0,litros:0};\nconst now=Date.now(), r=x=>(x==null||!isFinite(x))?null:Math.round(x*100)/100;\nH.hist.push({t:now,ft:r(S.fer_temp),dt:r(S.des_temp),fv:r(S.fer_vol),dv:r(S.des_vol),rv:r(S.rec_vol),cv:r(S.recir_vol),m:modo});\nif(H.hist.length>MAXH) H.hist.splice(0,H.hist.length-MAXH);\nconst prev=flow.get('Hprev');\nconst cur={modo,rec:S.rec_vol,f:{}};\nfor(const k of [...Object.keys(ALMS),...Object.keys(FASES)]) cur.f[k]=!!S[k];\nlet cambio=false;\nif(prev&&prev.modo===modo){\n  for(const k in cur.f) if(cur.f[k]!==prev.f[k]){\n    H.ev.unshift({t:now,txt:ALMS[k]||FASES[k],on:cur.f[k],alm:k in ALMS,modo});\n    if(real&&k==='fase_whisky_terminado'&&cur.f[k]) H.ciclos++;\n    cambio=true;\n  }\n  if(real&&S.act_vaciado&&prev.rec!=null&&S.rec_vol!=null&&S.rec_vol<prev.rec) H.litros+=prev.rec-S.rec_vol;\n}\nif(H.ev.length>MAXE) H.ev.length=MAXE;\nflow.set('Hprev',cur); flow.set('H',H);\nconst n=(flow.get('Hn')||0)+1; flow.set('Hn',n);\nif(cambio||n%12===0) return {payload:JSON.stringify(H)};   // se escribe a disco al haber eventos y cada 60 s\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "h_file"
+            ]
+        ]
+    },
+    {
+        "id": "h_file",
+        "type": "file",
+        "z": "tab_destileria",
+        "name": "historial_scada.json",
+        "filename": "historial_scada.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 620,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "h_ini",
+        "type": "inject",
+        "z": "tab_destileria",
+        "name": "al arrancar",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "h_filein"
+            ]
+        ]
+    },
+    {
+        "id": "h_filein",
+        "type": "file in",
+        "z": "tab_destileria",
+        "name": "leer historial",
+        "filename": "historial_scada.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 330,
+        "y": 660,
+        "wires": [
+            [
+                "h_carga"
+            ]
+        ]
+    },
+    {
+        "id": "h_carga",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Historial: cargar",
+        "func": "// Al arrancar: recupera el historial guardado en historial_scada.json\ntry{\n  const H=JSON.parse(String(msg.payload));\n  if(H&&Array.isArray(H.hist)&&Array.isArray(H.ev)){\n    H.ciclos=Number(H.ciclos)||0; H.litros=Number(H.litros)||0;\n    flow.set('H',H); node.status({fill:'green',shape:'dot',text:H.hist.length+' muestras / '+H.ev.length+' eventos'});\n  }\n}catch(e){ node.warn('historial_scada.json ilegible, se empieza de cero'); }\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "h_req",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Historial: pedidos SCADA",
+        "func": "// Pedidos del SCADA al historial.   salidas: [SCADA, archivo]\nconst vacio=()=>({hist:[],ev:[],ciclos:0,litros:0});\nconst H=flow.get('H')||vacio();\nif(msg.topic==='get_hist'){\n  const since=Number((msg.payload||{}).since)||0;\n  msg.topic='hist';                                   // se conserva msg._uib: responde solo al que pidió\n  msg.payload={full:since===0,hist:since?H.hist.filter(p=>p.t>since):H.hist,ev:H.ev,ciclos:H.ciclos,litros:H.litros};\n  return [msg,null];\n}\nif(msg.topic==='clear_hist'){\n  const nuevo=vacio(); flow.set('H',nuevo); flow.set('Hprev',null);\n  return [{topic:'hist_cleared',payload:true},{payload:JSON.stringify(nuevo)}];   // sin _uib: avisa a todas las páginas\n}\nreturn null;\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 720,
+        "wires": [
+            [
+                "n_ui"
+            ],
+            [
+                "h_file"
+            ]
+        ]
+    },
+    {
+        "id": "h_http",
+        "type": "http in",
+        "z": "tab_destileria",
+        "name": "GET /scada-api/csv/:tipo",
+        "url": "/scada-api/csv/:tipo",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 740,
+        "wires": [
+            [
+                "h_csv"
+            ]
+        ]
+    },
+    {
+        "id": "h_csv",
+        "type": "function",
+        "z": "tab_destileria",
+        "name": "Historial: CSV",
+        "func": "// GET /scada-api/csv/historial  -> CSV para Excel (separador ; y coma decimal)\nconst H=flow.get('H')||{hist:[],ev:[]};\nconst tipo=(msg.req&&msg.req.params&&msg.req.params.tipo)||'';\nconst pad=x=>String(x).padStart(2,'0');\nconst fh=t=>{const d=new Date(t);return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+' '+pad(d.getHours())+':'+pad(d.getMinutes())+':'+pad(d.getSeconds());};\nconst num=v=>(v==null||!isFinite(v))?'':String(v).replace('.',',');\nconst esc=v=>{v=String(v);return /[;\"\\n]/.test(v)?'\"'+v.replace(/\"/g,'\"\"')+'\"':v;};\nlet rows;\nif(tipo==='historial'){\n  rows=[['Fecha y hora','Temp fermentador (C)','Temp destilador (C)','Vol fermentador (L)','Vol destilador (L)','Vol trasiega (L)','Vol recirculado (L)','Modo']]\n    .concat(H.hist.map(p=>[fh(p.t),num(p.ft),num(p.dt),num(p.fv),num(p.dv),num(p.rv),num(p.cv),p.m||'']));\n}else{ msg.statusCode=404; msg.payload='No existe'; return msg; }\nconst d=new Date();\nmsg.statusCode=200;\nmsg.headers={'Content-Type':'text/csv; charset=utf-8','Content-Disposition':'attachment; filename=\"'+tipo+'_'+d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'.csv\"'};\nmsg.payload='﻿'+rows.map(r=>r.map(esc).join(';')).join('\\r\\n')+'\\r\\n';\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 740,
+        "wires": [
+            [
+                "h_res"
+            ]
+        ]
+    },
+    {
+        "id": "h_res",
+        "type": "http response",
+        "z": "tab_destileria",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 590,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "n_ui",
+        "type": "uibuilder",
+        "z": "tab_destileria",
+        "name": "SCADA",
+        "topic": "",
+        "url": "scada",
+        "okToGo": true,
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "deployedVersion": "7.5.0",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "editurl": "",
+        "x": 880,
+        "y": 260,
+        "wires": [
+            [
+                "n_cmd",
+                "h_req"
+            ],
+            []
+        ]
+    }
+]
